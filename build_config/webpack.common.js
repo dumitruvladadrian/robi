@@ -12,11 +12,13 @@ const config = {
 		modules: [
 			commonPaths.nodeModules,
 			commonPaths.src,
+			commonPaths.components,
 			commonPaths.public,
 		],
 		extensions: ['.js', '.json', '.jsx', '.svg', '.png', '.ts', '.tsx'],
 		alias: {
 			src: commonPaths.src,
+			components: commonPaths.components,
 		}
 	},
 	target: 'web',
