@@ -1,9 +1,6 @@
 import React from 'react';
-import { Menu } from 'components/menu/Menu';
+import { MainLayout } from 'components/layout/MainLayout';
 
 export const App = () => (
-  <div>
-    <Menu/>
-    <p>Hi there !</p>
-  </div>
+  <MainLayout/>
 );

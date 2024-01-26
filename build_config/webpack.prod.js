@@ -12,7 +12,17 @@ const config = {
 		rules: [
 			{
 				test: /\.(sa|sc|c)ss$/,
-				use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+				use: [
+					MiniCssExtractPlugin.loader,
+					{
+						loader: 'css-loader',
+						options: {
+							modules: true,
+						}
+					},
+					'postcss-loader',
+					'sass-loader'
+				]
 			}
 		]
 	},

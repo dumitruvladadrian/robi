@@ -1,0 +1,23 @@
+$primary: #f1a921;
+$secondary: #a6af00;
+
+$background: #fbe5bc;
+
+$black: #000;
+$white: #fff;
+
+// color combinations based on the primary color
+// complementary
+$complement: #2757de;
+// split complementary
+$analogous1: #e3391c;
+$analogous2: $secondary;
+//triadic
+$triadic1: #00b100;
+$triadic2: #00ac57;
+
+// example of a palette containing the primary color
+$orange: $primary;
+$peach: $background;
+$cognac: #846b54;
+$gray: #9e9793;

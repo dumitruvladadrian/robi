@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.firstLine {
+  @extend .font-size-s;
+  letter-spacing: 1px;
+}
+
+.secondLine {
+  @extend .font-size-s;
+  letter-spacing: -1px;
+  line-height: $size-m;
+}
+
+.thirdLine {
+  @extend .font-size-5xl;
+  letter-spacing: 12px;
+  font-weight: bold;
+  line-height: $size-3xl;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+}

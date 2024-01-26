@@ -14,11 +14,13 @@ const config = {
 			commonPaths.src,
 			commonPaths.components,
 			commonPaths.public,
+			commonPaths.utils,
 		],
 		extensions: ['.js', '.json', '.jsx', '.svg', '.png', '.ts', '.tsx'],
 		alias: {
 			src: commonPaths.src,
 			components: commonPaths.components,
+			utils: commonPaths.utils,
 		}
 	},
 	target: 'web',
@@ -41,6 +43,10 @@ const config = {
 			{
 				test: /\.(png|jpg|gif|woff|woff2|ttf|eot|svg)/,
 				type: 'asset',
+			},
+			{
+				test: /\.svg$/i,
+				type: 'asset/resource',
 			},
 		]
 	},

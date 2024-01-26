@@ -1,0 +1,76 @@
+.selectContainer {
+  width: fit-content;
+}
+
+.selectButton {
+  border: 1px solid lighten($black, 80%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: $size-m;
+  font-weight: bold;
+  height: $size-3xl;
+  border-radius: $size-s;
+  padding: 0 $size-m 0 $size-m;
+  margin: 0 $size-xs 0 $size-xs;
+  user-select: none;
+  transition: all (.3 + s) ease-out;
+  background-color: $white;
+
+  &:hover {
+
+    border: 1px solid $white;
+    background-image: linear-gradient(
+                    saturate(lighten($primary, 5%), 5%),
+                    $primary 85%,
+                    saturate(lighten($primary, 5%), 10%),
+    );
+    transition: all (0.3 + s) ease-out;
+    fill: $white;
+  }
+}
+
+.arrow {
+  margin-left: $size-xs;
+}
+
+.flipped {
+  rotate: 180deg;
+}
+
+.optionsContainer {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  z-index: 2000;
+  cursor: pointer;
+  margin: $size-xs $size-xs 0 $size-xs;
+  width: fit-content;
+  min-width: 80px;
+  background-color: $white;
+  border: 1px solid lighten($black, 80%);
+  border-radius: $size-s;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 $size-xs;
+
+    &:hover {
+      background-color: lighten($black, 95%);
+    }
+  }
+
+  li:first-child {
+    border-radius: $size-s $size-s 0 0;
+  }
+
+  li:last-child {
+    border-radius: 0 0 $size-s $size-s;
+  }
+}
+
+.arrow {
+  padding-left: $size-xs;
+}

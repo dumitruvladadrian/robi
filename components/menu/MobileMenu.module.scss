@@ -1,0 +1,41 @@
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    transition: width 400ms;
+
+    a {
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    a.active {
+        background-color: green;
+        color: white;
+    }
+
+    .expandButton {
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .expandButton:hover {
+        font-weight: 600;
+    }
+}
+
+.opened {
+    width: 800px;
+}
+
+.closed {
+    width: 100px;
+}

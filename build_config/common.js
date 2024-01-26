@@ -6,6 +6,7 @@ module.exports = {
 	nodeModules: path.resolve(__dirname, '../', 'node_modules'),
 	src: path.resolve(__dirname, '../', 'src'),
 	components: path.resolve(__dirname, '../', 'components'),
+	utils: path.resolve(__dirname, '../', 'utils'),
 	public: path.resolve(__dirname, '../', 'public'),
 	tsconfig: path.join(__dirname, '../', 'tsconfig.json')
 };

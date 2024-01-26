@@ -1,0 +1,45 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.menuItem,
+.menuItem:hover,
+.selected {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  height: $size-5xl;
+  border-radius: $size-s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menuItem {
+  color: $black;
+  padding: 0 $size-m 0 $size-m;
+  transition:all (0.6 + s) ease-out;
+  background-color: $white;
+}
+
+.selected {
+  background-image: linear-gradient(
+                  saturate(lighten($primary, 10%), 10%),
+                  $primary 90%,
+  );
+  color: $white;
+}
+
+.selected:hover,
+.menuItem:hover {
+  background-color: $primary;
+  color: $white;
+  background-image: linear-gradient(
+                  saturate(lighten($primary, 20%), 5%),
+                  $primary 90%,
+                  saturate(lighten($primary, 10%), 5%),
+  );
+  transition:all (.3 + s) ease-out;
+}
