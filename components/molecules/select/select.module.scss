@@ -11,7 +11,7 @@
   font-weight: bold;
   height: $size-3xl;
   border-radius: $size-s;
-  padding: 0 $size-m 0 $size-m;
+  padding: 0 $size-xs 0 $size-xs;
   margin: 0 $size-xs 0 $size-xs;
   user-select: none;
   transition: all (.3 + s) ease-out;
@@ -31,7 +31,8 @@
 }
 
 .arrow {
-  margin-left: $size-xs;
+  margin-left: $size-2xs;
+  margin-right: 0;
 }
 
 .flipped {
@@ -69,8 +70,4 @@
   li:last-child {
     border-radius: 0 0 $size-s $size-s;
   }
-}
-
-.arrow {
-  padding-left: $size-xs;
 }

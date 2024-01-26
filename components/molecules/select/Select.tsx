@@ -27,7 +27,7 @@ export const Select = ({ options, preSelectedItemId }: SelectInterfaceProps) => 
         className={s.selectButton}>
         {selectedOptionId === undefined ? 'Select' : getOptionById(selectedOptionId)}
         <div className={`${s.arrow} ${isOpen && s.flipped}`}>
-          <Icon name='arrow_down' height={15} width={15} />
+          <Icon name='arrow_down' width={18} height={18}/>
         </div>
       </div>
       {isOpen && <ul className={s.optionsContainer}>
